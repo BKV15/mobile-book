@@ -26,11 +26,11 @@
 
 .col {
 	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
+	float:right;
+	margin: 1% 1.6% 1% 0;
 }
 
-.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+.col:first-child { margin-right: 0; } /* all browsers except IE6 and lower */
 
 
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */

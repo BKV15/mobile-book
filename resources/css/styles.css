@@ -21,7 +21,8 @@
     padding: 0;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-size: 20px;
@@ -30,22 +31,54 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+.box {
+    padding: 1%;
+}
+
+section {
+    padding: 60px 0;
+}
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-/* ----------------------------------------------- */
-/* REUSABLE COMPONENTS */
-/* ----------------------------------------------- */
-
 /* --- HEADING --- */
+h1,
+h2,
+h3 {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+}
+
 h1 {
     margin: 0;
     font-size: 300%;
-    font-weight: 100;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+}
+
+h2 {
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 6%;
+    border-bottom: 2px solid #c29d0b;
+    margin: 30px auto 0;
+}
+
+h3 {
+    font-size: 140%;
+    margin: 10px 0;
 }
 
 /* --- BUTTONS --- */
@@ -85,6 +118,28 @@ h1 {
     border-color: #927608;
     color: #fff;
 }
+
+/* --- PARAGRAPH --- */
+.long-copy {
+    width: 60%;
+    margin: 0 auto 30px;
+    text-align: justify;
+    line-height: 145%;
+}
+
+.box p {
+    text-align: justify;
+    font-size: 95%;
+    line-height: 145%;
+}
+
+/* --- ICONS --- */
+
+.icon-big {
+    font-size: 300%;
+    color: #c29d0b;
+}
+
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
@@ -93,6 +148,7 @@ header {
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero-image2.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     position: relative;
     color: #fff;
@@ -136,4 +192,43 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+/* ----------------------------------------------- */
+/* BOOKS SHOWCASE */
+/* ----------------------------------------------- */
+
+.section-books {
+    padding: 0;
+}
+
+.books-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.books-showcase li {
+    width: 25%;
+    float: right;
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.books-showcase li img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    transform: scale(1.15);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.books-showcase li img:hover {
+    opacity: 1;
+    transform: scale(1.03);
 }
