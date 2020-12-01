@@ -31,6 +31,16 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1;}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
@@ -71,7 +81,7 @@ h2 {
 h2::after {
     content: "";
     display: block;
-    width: 6%;
+    width: 9%;
     border-bottom: 2px solid #c29d0b;
     margin: 30px auto 0;
 }
@@ -230,5 +240,60 @@ figure {
 
 .books-showcase li img:hover {
     opacity: 1;
-    transform: scale(1.03);
+    transform: scale(1.04);
+}
+
+/* ----------------------------------------------- */
+/* HOW IT WORKS */
+/* ----------------------------------------------- */
+.section-steps {
+    background-color: rgb(253, 253, 253);
+}
+
+.step-box:first-child {
+    text-align: left;
+    padding-left: 3%;
+    margin-top: 30px;
+}
+
+.step-box:last-child {
+    padding-right: 3%;
+    margin-top: 60px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.work-steps {
+    margin-bottom: 50px;
+}
+
+.work-steps:last-of-type {
+    margin-bottom: 80px;
+}
+
+.work-steps div {
+    display: block;
+    float: right;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #c29d0b;
+    padding: 8px;
+    color: #c29d0b;
+    font-size: 150%;
+    margin-left: 25px;
+    text-align: center;
+    line-height: 145%;
+}
+
+.work-steps p {
+    padding-top: 10px;
+}
+
+.step-box a img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
 }
