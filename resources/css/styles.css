@@ -21,7 +21,6 @@
     padding: 0;
 }
 
-html,
 body {
     background-color: #fff;
     color: #555;
@@ -143,11 +142,36 @@ h3 {
     line-height: 145%;
 }
 
+/* --- GENERAL LINKS --- */
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #c29d0b ;
+    border-bottom: 1px solid #c29d0b;
+    transition: color 0.2s, border-bottom 0.2s;
+    padding-bottom: 1px;
+}
+
+a:hover,
+a:active {
+    color: #555 ;
+    border: 0;
+}
+
 /* --- ICONS --- */
 
 .icon-big {
     font-size: 300%;
     color: #c29d0b;
+}
+
+.icon-small {
+    display: inline-block;
+    text-align: center;
+    color: #c29d0b;
+    vertical-align: middle;
+    line-height: 120%;
+    margin: 0 0 0 10px;
 }
 
 /* ----------------------------------------------- */
@@ -230,6 +254,7 @@ figure {
 }
 
 .books-showcase li img {
+    display: block;
     opacity: 0.7;
     width: 100%;
     height: auto;
@@ -240,14 +265,14 @@ figure {
 
 .books-showcase li img:hover {
     opacity: 1;
-    transform: scale(1.04);
+    transform: scale(1);
 }
 
 /* ----------------------------------------------- */
 /* HOW IT WORKS */
 /* ----------------------------------------------- */
 .section-steps {
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(245, 245, 245);
 }
 
 .step-box:first-child {
@@ -292,8 +317,80 @@ figure {
     padding-top: 10px;
 }
 
-.step-box a img {
+.download-icon:link,
+.download-icon:visited {
+    border: 0;
+}
+
+.download-icon img {
     height: 50px;
     width: auto;
     margin-left: 10px;
+}
+
+/* ----------------------------------------------- */
+/* LIBRARIES */
+/* ----------------------------------------------- */
+
+.library-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.library {
+    margin-bottom: 5px;
+}
+
+.library a {
+    display: inline-block;
+    direction: ltr;
+}
+
+/* ----------------------------------------------- */
+/* TESTIMONIALS */
+/* ----------------------------------------------- */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(img/testimonial-back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+
+.testimonials-block {
+    display: flex;
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 145%;
+    text-align: justify;
+    margin-top: 50px;
+    padding: 2%;
+    position: relative;
+    height: 100%;
+}
+
+blockquote::before {
+    content: '\201d';
+    font-size: 300%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+cite {
+    display: block;
+    margin: 30px 0 0 0;
+    font-size: 90%;
+}
+
+cite img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 0 0 25px;
+    vertical-align: middle;
 }
