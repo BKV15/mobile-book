@@ -67,7 +67,7 @@ h3 {
 }
 
 h1 {
-    margin: 0;
+    margin-bottom: 25px;
     font-size: 300%;
 }
 
@@ -98,7 +98,7 @@ h3 {
     text-decoration: none;
     padding: 5px 25px;
     border-radius: 300px;
-    margin: 30px 0 0 15px;
+    margin: 0 0 0 15px;
     transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
@@ -166,12 +166,12 @@ a:active {
 }
 
 .icon-small {
-    display: inline-block;
     text-align: center;
     color: #c29d0b;
     vertical-align: middle;
     line-height: 120%;
     margin: 0 0 0 10px;
+    font-size: 150%;
 }
 
 /* ----------------------------------------------- */
@@ -272,7 +272,7 @@ figure {
 /* HOW IT WORKS */
 /* ----------------------------------------------- */
 .section-steps {
-    background-color: rgb(245, 245, 245);
+    background-color:  #f3f3f3;
 }
 
 .step-box:first-child {
@@ -393,4 +393,58 @@ cite img {
     border-radius: 50%;
     margin: 0 0 0 25px;
     vertical-align: middle;
+}
+
+/* ----------------------------------------------- */
+/* PRICING */
+/* ----------------------------------------------- */
+
+.section-pricing {
+    background-color: #f3f3f3;
+}
+
+.pricing-box {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.pricing-box div {
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.pricing-box div:first-child {
+    background-color: #f8f8f8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.pricing-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.pricing-box div a {
+    width: 50%;
+}
+
+.pricing-text {
+    color: #c29d0b;
+    font-size: 200%;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.pricing-description {
+    font-size: 90%;
+}
+
+.pricing-text span {
+    font-size: 60%;
+}
+
+.pricing-box ul {
+    list-style: none;
 }
