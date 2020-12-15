@@ -92,7 +92,8 @@ h3 {
 
 /* --- BUTTONS --- */
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
     font-weight: 700;
     display: inline-block;
     text-decoration: none;
@@ -103,7 +104,8 @@ h3 {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
     color: #fff;
     background-color: #c29d0b;
     border: 1px solid #c29d0b;
@@ -116,7 +118,8 @@ h3 {
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"]:hover {
     background-color:#927608;
     border-color: #927608;
 }
@@ -400,7 +403,7 @@ cite img {
 /* ----------------------------------------------- */
 
 .section-pricing {
-    background-color: #f3f3f3;
+    background-color: #f4f4f4;
 }
 
 .pricing-box {
@@ -408,6 +411,7 @@ cite img {
     margin: 0 auto;
     background-color: #fff;
     border-radius: 5px;
+    box-shadow: 0 2px 2px #efefef;
 }
 
 .pricing-box div {
@@ -416,7 +420,7 @@ cite img {
 }
 
 .pricing-box div:first-child {
-    background-color: #f8f8f8;
+    background-color: #fcfcfc;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -447,4 +451,35 @@ cite img {
 
 .pricing-box ul {
     list-style: none;
+}
+
+/* ----------------------------------------------- */
+/* CONTACT FORM */
+/* ----------------------------------------------- */
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 3px;
+}
+
+input[type="checkbox"] {
+    margin: 10px 0 10px 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+*:focus {
+    outline: none;
 }
