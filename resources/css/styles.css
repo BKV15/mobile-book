@@ -97,7 +97,7 @@ input[type="submit"] {
     font-weight: 700;
     display: inline-block;
     text-decoration: none;
-    padding: 5px 25px;
+    padding: 10px 30px;
     border-radius: 300px;
     margin: 0 0 0 15px;
     transition: background-color 0.5s, color 0.5s, border-color 0.5s;
@@ -133,6 +133,7 @@ input[type="submit"]:hover {
 
 /* --- PARAGRAPH --- */
 .long-copy {
+	font-size: 95%;
     width: 60%;
     margin: 0 auto 30px;
     text-align: justify;
@@ -483,3 +484,73 @@ textarea {
 *:focus {
     outline: none;
 }
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+	background-color:#323232;
+	padding: 40px 0;
+	text-align: center;
+	color: #747474;
+	font-size: 90%;
+}
+.footer-nav {
+	list-style: none;
+}
+.footer-nav li {
+	float: right;
+	margin-left: 30px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited{
+	color: #747474;
+	border: 0;
+	display: inline-block;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+	color: #dbdbdb;
+}
+
+.footer-nav.social li {
+	float: left;
+}
+
+.footer-nav.social li:first-child {
+	margin-left: 0;
+}
+
+.social ion-icon {
+	font-size: 140%;
+	cursor: pointer;
+	transition: color 0.2s;
+}
+
+.facebook:hover {
+	color: #3b5999;
+}
+
+.twitter:hover {
+	color: #55acee;
+}
+
+.instagram:hover {
+	color: #e4405f;
+}
+
+.google:hover {
+	color: #dd4b39;
+}
+
+.copyright {
+	margin-top: 30px;
+}
+
+.copyright span {
+	font-size: 110%;
+}
+
