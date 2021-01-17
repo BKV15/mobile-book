@@ -1,0 +1,94 @@
+/* ----------------------------------------------- */
+/* 1200px to 1024px */
+/* ----------------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+
+    body {overflow-x: hidden;}
+    .row,
+    .hero-text {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+}
+
+/* ----------------------------------------------- */
+/* 1023px to 768px */
+/* ----------------------------------------------- */
+
+@media only screen and (max-width: 1023px) {
+    
+    body {font-size: 18px;}
+    .col {
+        width: 100%;
+        margin: 1% 0;
+    }
+
+    .long-copy {
+        width: 80%;
+        margin-right: 10%;
+    }
+
+    .step-box:first-child {
+        text-align: center;
+    }
+
+    .step-box:last-child {
+        text-align: center;
+    }
+
+    .work-steps {
+        width: 60%;
+        margin-right: 20%;
+    }
+
+    .app-screen {
+        width: 30%;
+    }
+
+    .library-img {
+        width: 60%;
+    }
+
+    .box {
+        text-align: center;
+    }
+
+    .pricing-box {
+        width: 70%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .footer-nav li,
+    .footer-nav.social li{
+        display: inline-block;
+        float: none;
+    }
+
+    .footer-nav.social li:first-child {
+        margin-left: 30px;
+    }
+}
+
+/* ----------------------------------------------- */
+/* 767px to 480px */
+/* ----------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+    
+    h1 {
+        font-size: 200%;
+    }
+
+    h2 {
+        font-size: 150%;
+    }
+
+    .main-nav {
+        visibility: hidden;
+    }
+}

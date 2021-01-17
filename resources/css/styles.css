@@ -21,6 +21,7 @@
     padding: 0;
 }
 
+html,
 body {
     background-color: #fff;
     color: #555;
@@ -28,6 +29,7 @@ body {
     font-family: 'b-nazanin';
     font-weight: 100;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
 .clearfix {zoom: 1;}
@@ -183,7 +185,7 @@ a:active {
 /* ----------------------------------------------- */
 
 header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero-image2.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero-image.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
