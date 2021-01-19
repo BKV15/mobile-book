@@ -171,13 +171,15 @@ a:active {
     color: #c29d0b;
 }
 
-.icon-small {
+.icon-small:link,
+.icon-small:visited {
     text-align: center;
     color: #c29d0b;
     vertical-align: middle;
     line-height: 120%;
     margin: 0 0 0 10px;
-    font-size: 150%;
+    font-size: 115%;
+    border: 0;
 }
 
 /* ----------------------------------------------- */
@@ -201,6 +203,15 @@ header {
     margin-top: 20px;
 }
 
+.black-logo {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: right;
+    margin: 5px 0;
+}
+
+/* --- MAIN NAVIGATION --- */
 .main-nav {
     list-style: none;
     float: left;
@@ -224,6 +235,56 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #c29d0b;
+}
+
+/* --- STICKY NAVIGATION --- */
+.sticky-nav {
+    background-color: #fff;
+    box-shadow: 0 2px 1px #c7c7c7;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.sticky-nav .logo {
+    display: none;
+}
+
+.sticky-nav .black-logo {
+    display: inline-block;
+}
+
+.sticky-nav .main-nav li {
+    margin: 0 55px 0 0;
+    line-height: 60px;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited {
+    color: #555;
+    font-size: 90%;
+    padding: 4px 0;
+    border: 0;
+}
+
+.sticky-nav .mobile-nav-icon:link,
+.sticky-nav .mobile-nav-icon:visited {
+    color: #555;
+    font-size: 150%;
+    margin-top: 15px;
+}
+
+/* --- MOBILE NAVIGATION --- */
+.mobile-nav-icon:link,
+.mobile-nav-icon:visited {
+    display: none;
+    color: #fff;
+    font-size: 200%;
+    border: 0;
+    float: left;
+    margin-top: 40px;
 }
 
 .hero-text {

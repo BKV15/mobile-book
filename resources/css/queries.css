@@ -47,12 +47,8 @@
         width: 30%;
     }
 
-    .library-img {
-        width: 60%;
-    }
-
-    .box {
-        text-align: center;
+    .section-libraries .col {
+        width: 50%;
     }
 
     .pricing-box {
@@ -89,6 +85,11 @@
     }
 
     .main-nav {
-        visibility: hidden;
+        display: none;
+    }
+
+    .mobile-nav-icon:link,
+    .mobile-nav-icon:visited {
+        display: inline-block;
     }
 }
