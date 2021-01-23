@@ -215,6 +215,7 @@ header {
 .main-nav {
     list-style: none;
     float: left;
+    display: inline;
 }
 
 .main-nav li {
@@ -617,3 +618,10 @@ footer {
 	font-size: 110%;
 }
 
+/* ----------------------------------------------- */
+/* JAVASCRIPT CLASSES */
+/* ----------------------------------------------- */
+
+.js--display {
+    display: block !important;
+}
