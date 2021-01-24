@@ -297,6 +297,15 @@ header {
 }
 
 /* ----------------------------------------------- */
+/* FEATURES */
+/* ----------------------------------------------- */
+
+.section-features .row .col {
+    opacity: 0;
+    transition: opacity 0.9s;
+}
+
+/* ----------------------------------------------- */
 /* BOOKS SHOWCASE */
 /* ----------------------------------------------- */
 
@@ -356,6 +365,11 @@ figure {
 
 .app-screen {
     width: 40%;
+    opacity: 0;
+}
+
+.app-screen.animate__animated {
+    opacity: 1;
 }
 
 .work-steps {
@@ -399,6 +413,11 @@ figure {
 /* ----------------------------------------------- */
 /* LIBRARIES */
 /* ----------------------------------------------- */
+
+.section-libraries .row .col {
+    opacity: 0;
+    transition: opacity 0.9s;
+}
 
 .library-img {
     width: 100%;
@@ -619,9 +638,27 @@ footer {
 }
 
 /* ----------------------------------------------- */
+/* ANIMATION */
+/* ----------------------------------------------- */
+
+@keyframes pulse-an {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+/* ----------------------------------------------- */
 /* JAVASCRIPT CLASSES */
 /* ----------------------------------------------- */
 
 .js--display {
     display: block !important;
+}
+
+.js--opacity {
+    opacity: 1 !important;
+}
+
+.js--pulse-animation {
+    animation: pulse-an 0.6s linear;
 }
